@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.silver-zyx.WebexWeb</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Webex Web</name>
+  <summary>Webex web client as a standalone desktop app</summary>
+
+  <developer id="io.github.silver-zyx">
+    <name>silver-zyx</name>
+  </developer>
+
+  <description>
+    <p>
+      Webex Web wraps web.webex.com in a dedicated window with persistent
+      login, a tray icon, desktop notifications, and working camera,
+      microphone, and screen sharing via the system screencast portal.
+    </p>
+    <p>
+      Not affiliated with or endorsed by Cisco. Webex is a trademark of Cisco.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.silver-zyx.WebexWeb.desktop</launchable>
+
+  <url type="homepage">https://github.com/silver-zyx/WebexWeb</url>
+  <url type="bugtracker">https://github.com/silver-zyx/WebexWeb/issues</url>
+
+  <categories>
+    <category>Network</category>
+    <category>VideoConference</category>
+  </categories>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="0.1.0" date="2026-06-24"/>
+  </releases>
+</component>

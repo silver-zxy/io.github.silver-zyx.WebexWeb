@@ -1,0 +1,8 @@
+{
+  "name": "webexweb",
+  "version": "0.1.0",
+  "description": "Webex as a standalone desktop app",
+  "main": "main.js",
+  "author": "silver-zyx",
+  "license": "MIT"
+}
