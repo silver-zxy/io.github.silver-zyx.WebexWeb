@@ -1,0 +1,8 @@
+[Flatpak Repo]
+Title=WebexWeb
+Url=https://silver-zxy.github.io/io.github.silver-zyx.WebexWeb/
+Homepage=https://github.com/silver-zxy/io.github.silver-zyx.WebexWeb
+Comment=Webex web client as a standalone desktop app
+Description=Webex Web wraps web.webex.com in a dedicated window.
+Icon=https://silver-zxy.github.io/io.github.silver-zyx.WebexWeb/io.github.silver_zyx.WebexWeb.png
+GPGKey=mDMEauuE3hYJKwYBBAHaRw8BAQdAl7c68Rpo1rB/sIysNAAlBoc7TQW4Vg5+i5nabaMW+Lq0OnNpbHZlci16eXggPDM1MjU4MTAwMStzaWx2ZXItenh5QHVzZXJzLm5vcmVwbHkuZ2l0aHViLmNvbT6IkAQTFgoAOBYhBN2/5fhr0l0TzJ71Fu0dqV7wR1XVBQJq64TeAhsDBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEO0dqV7wR1XVcG4BAJJb6w9yKbH5wNcaacoJTSgm7g/DY+iV+tWG2eWrfORKAP4vpF4B2iCqN2NWP6PhP7BQ8VGVPjqVhQgOwzzPkEvmC7g4BGrrhN4SCisGAQQBl1UBBQEBB0DMEgf1Bb2gDABokvM5aTqkJkEQJDKVXUH7R5p9UO/3aQMBCAeIeAQYFgoAIBYhBN2/5fhr0l0TzJ71Fu0dqV7wR1XVBQJq64TeAhsMAAoJEO0dqV7wR1XV8uIA/ju+LoxCo1668TugTvfpXsVk6pfBOO6xLrGBBGpcB1kdAPwLN9DvidOuorXYuSjlNV29SPIvryzR2mK/pnZ3WlT+AA==

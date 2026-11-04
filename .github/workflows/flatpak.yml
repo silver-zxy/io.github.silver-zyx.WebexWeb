@@ -28,6 +28,12 @@ jobs:
           dnf install -y unzip || yum install -y unzip || \
           apk add unzip
 
+      - name: Configure GPG for loopback pinentry
+        run: |
+          mkdir -p ~/.gnupg
+          echo "allow-loopback-pinentry" > ~/.gnupg/gpg-agent.conf
+          gpgconf --kill gpg-agent
+
       - name: Setup GPG
         id: gpg
         uses: crazy-max/ghaction-import-gpg@v6
@@ -35,16 +41,31 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
 
-      - name: Build
+      - name: Build Flatpak Repo
         uses: andyholmes/flatter@main
         with:
           files: |
             io.github.silver_zyx.WebexWeb.yaml
           arch: x86_64
           flatpak-builder-args: --install-deps-from=flathub
-          upload-pages-artifact: true
+          upload-pages-artifact: false   # We will handle this manually below
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
 
-      - name: Deploy
+      - name: Prepare Pages Artifact
+        run: |
+          mkdir -p public
+          # Copy the built flatpak repo
+          cp -a repo/. public/
+          # Copy our manual index file
+          cp index.flatpakrepo public/
+          # Create a basic HTML index so the root URL doesn't 404
+          echo "<h1>WebexWeb Flatpak Repository</h1><p>Add this remote using: <code>flatpak remote-add --if-not-exists webexweb https://silver-zxy.github.io/io.github.silver-zyx.WebexWeb/index.flatpakrepo</code></p>" > public/index.html
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
