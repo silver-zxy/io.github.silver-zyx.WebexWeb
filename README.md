@@ -1,4 +1,4 @@
-# <img src="data/io.github.silver-zyx.WebexWeb.svg" alt="" width="30" align="top"> Webex Web
+# <img src="data/io.github.silver_zyx.WebexWeb.svg" alt="" width="30" align="top"> Webex Web
 
 > *A working Linux client for Webex – because the official app is broken.*
 
@@ -11,8 +11,8 @@ Webex in its own window, with desktop Integration. Built with Electron.
 ## Install
 
     flatpak remote-add --if-not-exists webexweb \
-      https://silver-zyx.github.io/io.github.silver-zyx.WebexWeb/index.flatpakrepo
-    flatpak install webexweb io.github.silver-zyx.WebexWeb
+      https://silver-zyx.github.io/io.github.silver_zyx.WebexWeb/index.flatpakrepo
+    flatpak install webexweb io.github.silver_zyx.WebexWeb
 
 ## Build locally
 
@@ -23,9 +23,9 @@ Webex in its own window, with desktop Integration. Built with Electron.
       org.electronjs.Electron2.BaseApp//25.08
 
     flatpak run org.flatpak.Builder --user --install --force-clean \
-      build-dir io.github.silver-zyx.WebexWeb.yaml
+      build-dir io.github.silver_zyx.WebexWeb.yaml
 
-    flatpak run io.github.silver-zyx.WebexWeb
+    flatpak run io.github.silver_zyx.WebexWeb
 
 ## License
 

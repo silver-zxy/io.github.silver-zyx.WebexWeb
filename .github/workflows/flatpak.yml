@@ -38,7 +38,7 @@ jobs:
         uses: andyholmes/flatter@main
         with:
           files: |
-            io.github.silver-zyx.WebexWeb.yaml
+            io.github.silver_zyx.WebexWeb.yaml
           arch: x86_64
           flatpak-builder-args: --install-deps-from=flathub
           upload-pages-artifact: true

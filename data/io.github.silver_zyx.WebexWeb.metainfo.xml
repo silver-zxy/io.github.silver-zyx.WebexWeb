@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.silver-zyx.WebexWeb</id>
+  <id>io.github.silver_zyx.WebexWeb</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>Webex Web</name>
   <summary>Webex web client as a standalone desktop app</summary>
 
-  <developer id="io.github.silver-zyx">
+  <developer id="io.github.silver_zyx">
     <name>silver-zyx</name>
   </developer>
 
@@ -21,7 +21,7 @@
     </p>
   </description>
 
-  <launchable type="desktop-id">io.github.silver-zyx.WebexWeb.desktop</launchable>
+  <launchable type="desktop-id">io.github.silver_zyx.WebexWeb.desktop</launchable>
 
   <url type="homepage">https://github.com/silver-zyx/WebexWeb</url>
   <url type="bugtracker">https://github.com/silver-zyx/WebexWeb/issues</url>

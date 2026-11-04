@@ -1,4 +1,4 @@
-app-id: io.github.silver-zyx.WebexWeb
+app-id: io.github.silver_zyx.WebexWeb
 runtime: org.freedesktop.Platform
 runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
@@ -27,20 +27,20 @@ modules:
     buildsystem: simple
     build-commands:
       - rsvg-convert -w 256 -h 256
-          data/io.github.silver-zyx.WebexWeb.svg
+          data/io.github.silver_zyx.WebexWeb.svg
           -o icon.png
       - cp -a electron "${FLATPAK_DEST}/electron"
       - install -Dm644 src/main.js      "${FLATPAK_DEST}/main/main.js"
       - install -Dm644 src/package.json "${FLATPAK_DEST}/main/package.json"
       - install -Dm755 webexweb.sh      "${FLATPAK_DEST}/bin/webexweb"
-      - install -Dm644 data/io.github.silver-zyx.WebexWeb.desktop
-          "${FLATPAK_DEST}/share/applications/io.github.silver-zyx.WebexWeb.desktop"
-      - install -Dm644 data/io.github.silver-zyx.WebexWeb.metainfo.xml
-          "${FLATPAK_DEST}/share/metainfo/io.github.silver-zyx.WebexWeb.metainfo.xml"
-      - install -Dm644 data/io.github.silver-zyx.WebexWeb.svg
-          "${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/io.github.silver-zyx.WebexWeb.svg"
+      - install -Dm644 data/io.github.silver_zyx.WebexWeb.desktop
+          "${FLATPAK_DEST}/share/applications/io.github.silver_zyx.WebexWeb.desktop"
+      - install -Dm644 data/io.github.silver_zyx.WebexWeb.metainfo.xml
+          "${FLATPAK_DEST}/share/metainfo/io.github.silver_zyx.WebexWeb.metainfo.xml"
+      - install -Dm644 data/io.github.silver_zyx.WebexWeb.svg
+          "${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/io.github.silver_zyx.WebexWeb.svg"
       - install -Dm644 icon.png
-          "${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/io.github.silver-zyx.WebexWeb.png"
+          "${FLATPAK_DEST}/share/icons/hicolor/256x256/apps/io.github.silver_zyx.WebexWeb.png"
     sources:
       - type: archive
         only-arches:

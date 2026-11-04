@@ -17,13 +17,13 @@ if (!app.requestSingleInstanceLock()) {
 }
 
 const WEBEX_URL  = 'https://web.webex.com';
-const ICON_PNG   = '/app/share/icons/hicolor/256x256/apps/io.github.silver-zyx.WebexWeb.png';
+const ICON_PNG   = '/app/share/icons/hicolor/256x256/apps/io.github.silver_zyx.WebexWeb.png';
 const STATE_FILE = path.join(app.getPath('userData'), 'window-state.json');
 
 let win  = null;
 let tray = null;
 
-app.setDesktopName('io.github.silver-zyx.WebexWeb.desktop');
+app.setDesktopName('io.github.silver_zyx.WebexWeb.desktop');
 
 function loadState() {
     try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); }
